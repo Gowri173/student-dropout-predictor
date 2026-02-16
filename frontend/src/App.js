@@ -21,7 +21,7 @@ function App() {
     setResult(null);
 
     try {
-      const API = process.env.REACT_APP_API_URL || "http://localhost:8000";
+      const API = "https://student-risk-api.onrender.com";
 
       const res = await axios.post(`${API}/predict`, {
         attendance: parseFloat(attendance),
